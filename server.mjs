@@ -74,3 +74,13 @@ app.delete('/user/:id', (req, res) => {
     res.send("user not found");
   }
 })
+app.get('/home', (req, res) => {
+  res.send('here is your home')
+})
+app.get('/', (req, res) => {
+  res.send('Hi I am a hello world Server program')
+})
+
+app.listen(port, () => {
+  console.log(`Example app listening at http://localhost:${port}`)
+})
